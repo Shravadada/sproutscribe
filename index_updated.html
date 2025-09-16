@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SproutScribe – The Biodegradable Pen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+  <header class="bg-green-600 text-white p-6">
+    <h1 class="text-3xl font-bold">SproutScribe</h1>
+    <p>The Future of Writing is Green</p>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-8">Innovative Features</h2>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c4f50b6c0f0?auto=format&fit=crop&w=400&q=60" alt="Biodegradable materials" class="rounded mb-4 mx-auto">
+        <h3 class="font-semibold text-lg">100% Biodegradable</h3>
+        <p>Made from plant-based materials that decompose naturally.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=400&q=60" alt="Seeds sprouting" class="rounded mb-4 mx-auto">
+        <h3 class="font-semibold text-lg">Grows Into Plants</h3>
+        <p>Contains non-GMO seeds in the cap that sprout after use.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=60" alt="Smooth writing" class="rounded mb-4 mx-auto">
+        <h3 class="font-semibold text-lg">Smooth Writing</h3>
+        <p>High-quality ink that flows smoothly and is eco-friendly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Code Section -->
+  <section id="qr" class="py-12 bg-gray-100 text-center">
+    <h2 class="text-2xl font-bold mb-4">Scan & Learn More</h2>
+    <p class="mb-4">Try scanning this QR code to see how we can link to resources.</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACi0lEQVR4nO2bzY3bMBCFvwkF7JECUsCWQnewJaWmdCCWsgUsIB0N0Hg5kLS1P4mziOJYwfBkS99hAOINZx5HJj6z8pdP4eC8884777zzzv+Mt7YGyDYAywAsZrD0d4cbxuP8xnySJM1AmsEOsWA2BgFBkqTX/N+Ox/mN+aUrNI/tr6ZYsANQhX3beJzfhh8+eqj8KCw9G2K5bTzOb8t/sL8nU5pBeQzl5vE4vy3f9zcKWMAgFEvTaSDNowlgbYHcW/zO/xafzcxspNZXsDzU0soOnGr5fNt4nN+Ir/q9KFQsJ1N+PBp5DDRh3y4e57flqc1PUkETQRAlaQ79WSwVqWu6t/idv7JacxsLJJXWCU+xnHviIE1Rai/uLX7nf71afZUmRLYgYxkRy4Dy+DIoPx1NLNZT+L3F7/yV1c2pIKkn6SbYGSQV+i/X7/748/kraapPgloRTfcnL+na93dn/Kq+gqra0FLx5Tj2+mq3fM+7Uaqp+ZykL5quwnb97pGv9ZWl56FY0slIE5AEyuMMxJcB4svg9dUu+Z6f5/WpW+srYgFq/1u8vtonvzIveuvbymnSHOqdsPe/++XP+oXqWlWno25tWDlZvr+75M/+szDi0ZSfmgnd8/PR/P5ov/zq/K21slZdUb/+rXJ2/e6QX18eNCfrdabu2dvz8475y/ykJtp8Hen5QW2SMpbWBN9p/M5f4dtdEdi3GdquAlXE2R58fnKf/Kp+XlfNZ7sS6Ena8/MO+bfzdQaYIKhO5KTvX4tlw+8H/w++nr82Qrc2CrRJrH8Rj/N/xr+dn4Q4Y3AagFCMOEOaTub63SXPpSvi7Eq+cyrdf94rb7rOrJZ/3+28884777zzG/A/AFTLB1ix4b7QAAAAAElFTkSuQmCC" alt="Sample QR Code" class="mx-auto w-40 h-40">
+  </section>
+
+  <!-- Science Section -->
+  <section id="science" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">The Science Behind SproutScribe</h2>
+    <p class="mb-4">We tested biodegradable materials and found PLA blended with bamboo fibers offered durability and rapid decomposition.</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li>92% biodegradation within 6 months</li>
+      <li>78% seed germination success</li>
+      <li>No toxic residues after decomposition</li>
+    </ul>
+  </section>
+
+  <!-- Survey Results Section -->
+  <section id="survey" class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center">Survey Results</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <canvas id="disposalChart"></canvas>
+        </div>
+        <div>
+          <canvas id="bioChart"></canvas>
+        </div>
+      </div>
+      <div class="mt-8">
+        <canvas id="modsChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center p-6 mt-12">
+    <p>&copy; 2025 SproutScribe Research Project</p>
+  </footer>
+
+  <script>
+    const disposalData = {
+      labels: ['Throw away', 'Replace ink cartilage'],
+      datasets: [{
+        data: [77, 17],
+        backgroundColor: ['#22c55e','#3b82f6','#facc15']
+      }]
+    };
+
+    const bioData = {
+      labels: ['Yes', 'Maybe', 'No'],
+      datasets: [{
+        data: [61, 26, 7],
+        backgroundColor: ['#22c55e','#3b82f6','#f87171']
+      }]
+    };
+
+    const modsData = {
+      labels: ['Educational QR code', 'Seed capsule inside pen', '', 'Cap', 'Pen clip', 'Better grip to hold pen'],
+      datasets: [{
+        data: [73, 51, 3, 2, 2, 1],
+        backgroundColor: ['#22c55e','#3b82f6','#facc15','#f87171','#a855f7','#06b6d4']
+      }]
+    };
+
+    new Chart(document.getElementById('disposalChart'), {
+      type: 'pie',
+      data: disposalData
+    });
+
+    new Chart(document.getElementById('bioChart'), {
+      type: 'doughnut',
+      data: bioData
+    });
+
+    new Chart(document.getElementById('modsChart'), {
+      type: 'bar',
+      data: modsData,
+      options: { indexAxis: 'y' }
+    });
+  </script>
+</body>
+</html>
