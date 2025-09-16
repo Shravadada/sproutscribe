@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SproutScribe – The Biodegradable Pen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="description" content="SproutScribe — a biodegradable pen that can sprout into a plant. Stories today, a greener tomorrow." />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header / Nav -->
+  <header class="bg-green-600 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold">SproutScribe</h1>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm font-medium">
+          <li><a href="#features" class="hover:underline">Features</a></li>
+          <li><a href="#science" class="hover:underline">Science</a></li>
+          <li><a href="#survey-data" class="hover:underline">Survey Data</a></li>
+          <li><a href="#live-survey" class="hover:underline">Survey</a></li>
+          <li><a href="#faq" class="hover:underline">FAQ</a></li>
+          <li><a href="#download" class="hover:underline">Download</a></li>
+        </ul>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded bg-white/10">Menu</button>
+    </div>
+    <!-- Mobile nav -->
+    <nav id="mobileNav" class="md:hidden hidden border-t border-white/20">
+      <ul class="max-w-6xl mx-auto px-4 py-3 grid gap-2 text-sm">
+        <li><a href="#features" class="block py-2 hover:underline">Features</a></li>
+        <li><a href="#science" class="block py-2 hover:underline">Science</a></li>
+        <li><a href="#survey-data" class="block py-2 hover:underline">Survey Data</a></li>
+        <li><a href="#live-survey" class="block py-2 hover:underline">Survey</a></li>
+        <li><a href="#faq" class="block py-2 hover:underline">FAQ</a></li>
+        <li><a href="#download" class="block py-2 hover:underline">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero with futuristic image on right -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">The Future of Writing is Green</h2>
+        <p class="mt-3 text-lg text-gray-700">SproutScribe is a fully biodegradable pen that can be planted to sprout new life.</p>
+        <p class="mt-2 text-sm uppercase tracking-wide text-green-700 font-semibold">stories today, a greener tomorrow</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#science" class="inline-block bg-green-600 text-white px-5 py-3 rounded hover:bg-green-700">See the Science</a>
+          <a href="#live-survey" class="inline-block border border-green-700 text-green-700 px-5 py-3 rounded hover:bg-green-50">Take the Survey</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Futuristic sustainable city image -->
+        <img
+          src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+          alt="Futuristic sustainable city concept"
+          class="rounded-xl shadow-xl w-full object-cover h-80 md:h-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features with supportive images -->
+  <section id="features" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Innovative Features</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=70" alt="Compostable bioplastic granules" class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">100% Biodegradable</h3>
+        <p class="text-gray-700 mt-1">Plant-based body made from PLA reinforced with bamboo fibers breaks down naturally.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=70" alt="Seeds sprouting in soil" class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">Grows Into Plants</h3>
+        <p class="text-gray-700 mt-1">Cap contains non‑GMO seeds. When you’re done, plant it and watch it grow.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=600&q=70" alt="Smooth handwriting on paper" class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">Smooth Writing</h3>
+        <p class="text-gray-700 mt-1">Vegetable‑based ink flows cleanly for a comfortable, consistent writing experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR code demo -->
+  <section id="qr" class="py-12 bg-gray-100 text-center">
+    <h2 class="text-2xl font-bold mb-4">Scan & Learn More</h2>
+    <p class="mb-4">Scan this QR to see how we can link resources.</p>
+    <img src="sample_qr.png" alt="Sample QR Code" class="mx-auto w-40 h-40 rounded shadow">
+  </section>
+
+  <!-- Science -->
+  <section id="science" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">The Science Behind SproutScribe</h2>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-xl font-semibold text-green-700">Materials Research</h3>
+        <p class="mt-2 mb-4">We developed a proprietary blend of PLA (polylactic acid) derived from corn starch, reinforced with bamboo fibers. The ink is based on vegetable pigments for safety and biodegradability.</p>
+        <h4 class="font-semibold mb-2">Decomposition Timeline:</h4>
+        <div class="space-y-3">
+          <div>
+            <p class="text-sm">0–2 months: 15% degraded</p>
+            <div class="w-full bg-gray-200 h-2 rounded"><div class="bg-green-500 h-2 rounded" style="width:15%"></div></div>
+          </div>
+          <div>
+            <p class="text-sm">2–4 months: 60% degraded</p>
+            <div class="w-full bg-gray-200 h-2 rounded"><div class="bg-green-600 h-2 rounded" style="width:60%"></div></div>
+          </div>
+          <div>
+            <p class="text-sm">4–6 months: 92% degraded</p>
+            <div class="w-full bg-gray-200 h-2 rounded"><div class="bg-green-700 h-2 rounded" style="width:92%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-green-700">Testing Methodology</h3>
+        <p class="mt-2 mb-4">Controlled decomposition tests were carried out in three environments: industrial compost, home compost, and landfill conditions. Optimal degradation occurred in compost settings.</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>No toxic residues left after decomposition</li>
+          <li>Seed germination success: 78%</li>
+          <li>Writing performance equal to conventional pens</li>
+        </ul>
+        <div id="download" class="mt-6">
+          <a href="sproutscribe_research.pdf" download class="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Download Full Research Paper</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Survey Data (summaries: charts + tables) -->
+  <section id="survey-data" class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Survey Data (Summary)</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold mb-2 text-center">Pen Disposal Habits</h3>
+          <canvas id="disposalChart"></canvas>
+          <table class="mt-4 w-full text-sm border">
+            <tr><th class="border px-2 py-1">Method</th><th class="border px-2 py-1">Count</th></tr>
+            <tr><td class="border px-2 py-1">Throw away</td><td class="border px-2 py-1">77</td></tr>
+            <tr><td class="border px-2 py-1">Replace ink cartridge</td><td class="border px-2 py-1">17</td></tr>
+          </table>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold mb-2 text-center">Do we need Biodegradable Pens?</h3>
+          <canvas id="bioChart"></canvas>
+          <table class="mt-4 w-full text-sm border">
+            <tr><th class="border px-2 py-1">Response</th><th class="border px-2 py-1">Count</th></tr>
+            <tr><td class="border px-2 py-1">Yes</td><td class="border px-2 py-1">61</td></tr>
+            <tr><td class="border px-2 py-1">Maybe</td><td class="border px-2 py-1">26</td></tr>
+            <tr><td class="border px-2 py-1">No</td><td class="border px-2 py-1">7</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="mt-8 bg-white p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2 text-center">Modifications Suggested</h3>
+        <canvas id="modsChart"></canvas>
+        <table class="mt-4 w-full text-sm border">
+          <tr><th class="border px-2 py-1">Modification</th><th class="border px-2 py-1">Count</th></tr>
+          <tr><td class="border px-2 py-1">Educational QR code</td><td class="border px-2 py-1">73</td></tr>
+          <tr><td class="border px-2 py-1">Seed capsule inside pen</td><td class="border px-2 py-1">51</td></tr>
+          <tr><td class="border px-2 py-1">Pen clip</td><td class="border px-2 py-1">2</td></tr>
+          <tr><td class="border px-2 py-1">Cap</td><td class="border px-2 py-1">2</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Survey (embedded Google Form) -->
+  <section id="live-survey" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Take Our Survey</h2>
+      <p class="text-center text-gray-600 mb-6">This form is live and updates automatically as responses come in.</p>
+      <div class="flex justify-center">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc2yqJNTXap7mb_ZVH6d_M9Bz8pNkYDU8lKY9k6FTzqmfPfpw/viewform?embedded=true"
+          width="640" height="2511" frameborder="0" marginheight="0" marginwidth="0"
+          class="w-full max-w-3xl rounded-lg shadow">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">FAQ – Your Questions, Answered</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <details class="bg-white p-5 rounded-lg shadow" open>
+        <summary class="font-semibold">How to open/close the pen?</summary>
+        <p class="mt-2 text-gray-700">Prototype A uses a twist mechanism; Prototype B uses a click top. Both are designed without springs to keep parts biodegradable.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">Where’s the cap / grip?</summary>
+        <p class="mt-2 text-gray-700">We’re testing a minimal cap that doubles as a seed holder. A textured bamboo-fiber sleeve provides grip without extra plastic.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">How much will it cost?</summary>
+        <p class="mt-2 text-gray-700">Target retail is similar to mid‑range pens. Bulk school pricing is possible as materials scale.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">How long will the pen last?</summary>
+        <p class="mt-2 text-gray-700">Comparable to a standard ballpoint in normal classroom use. It begins to break down only in composting conditions.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">What if I don’t want the seed?</summary>
+        <p class="mt-2 text-gray-700">You can gift the seed, plant it in community gardens, or choose the seed‑free version we’re testing.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">Does this cost more than a normal pen?</summary>
+        <p class="mt-2 text-gray-700">Material costs are slightly higher, but classroom multipacks and refills bring the total cost close to regular pens.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">What’s the point of the seed in the cap?</summary>
+        <p class="mt-2 text-gray-700">It turns end‑of‑life into a classroom activity—plant the cap and track germination while the pen body biodegrades.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow">
+        <summary class="font-semibold">Why choose this over a cheap pen?</summary>
+        <p class="mt-2 text-gray-700">This pen reduces plastic waste and teaches circular design. It writes smoothly and adds an educational component.</p>
+      </details>
+      <details class="bg-white p-5 rounded-lg shadow md:col-span-2">
+        <summary class="font-semibold">“Look at overall writing solution… digital transfer?”</summary>
+        <p class="mt-2 text-gray-700">We agree! We’re exploring paper‑light workflows: QR‑linked content, recycled notebooks, and refillable ink—all alongside SproutScribe.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white text-center p-6">
+    <p>&copy; <span id="year"></span> SproutScribe Research Project · <span class="uppercase">stories today, a greener tomorrow</span></p>
+  </footer>
+
+  <script>
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn?.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+    mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.add('hidden');
+    }));
+
+    // charts
+    const disposalData = {
+      labels: ["Throw away","Replace ink cartridge"],
+      datasets: [{ data: [77,17], backgroundColor: ['#22c55e','#3b82f6'] }]
+    };
+    new Chart(document.getElementById('disposalChart'), { type: 'pie', data: disposalData });
+
+    const bioData = {
+      labels: ["Yes","Maybe","No"],
+      datasets: [{ data: [61,26,7], backgroundColor: ['#22c55e','#3b82f6','#f87171'] }]
+    };
+    new Chart(document.getElementById('bioChart'), { type: 'doughnut', data: bioData });
+
+    const modsData = {
+      labels: ["Educational QR code","Seed capsule inside pen","Pen clip","Cap"],
+      datasets: [{ data: [73,51,2,2], backgroundColor: ['#22c55e','#3b82f6','#facc15','#f87171'] }]
+    };
+    new Chart(document.getElementById('modsChart'), {
+      type: 'bar',
+      data: modsData,
+      options: { indexAxis: 'y' }
+    });
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
