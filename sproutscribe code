@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SproutScribe – The Biodegradable Pen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .card { transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-200">
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white dark:bg-black/60 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-extrabold">SproutScribe</h1>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm font-medium">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#science">Science</a></li>
+          <li><a href="#survey-data">Survey Data</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#live-survey">Survey</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="px-3 py-2 rounded-md bg-white/10 hover:bg-white/20 text-sm">
+          <span id="themeLabel">Dark</span> mode
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-white dark:bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">The Future of Writing is Green</h2>
+        <p class="mt-3 text-lg text-gray-700 dark:text-gray-300">SproutScribe is a biodegradable pen that can be planted to sprout new life.</p>
+        <p class="mt-2 text-sm uppercase tracking-wide text-green-700 dark:text-green-400 font-semibold">stories today, a greener tomorrow</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+             class="rounded-xl shadow-xl w-full h-80 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Innovative Features</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=70"
+             class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">100% Biodegradable</h3>
+        <p>Made from PLA reinforced with bamboo fibers, breaking down naturally.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=70"
+             class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">Grows Into Plants</h3>
+        <p>Cap contains non-GMO seeds. Plant it after use and watch it grow.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <img src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=600&q=70"
+             class="rounded mb-4 w-full h-40 object-cover">
+        <h3 class="font-semibold text-lg">Smooth Writing</h3>
+        <p>Vegetable-based ink flows smoothly for a comfortable writing experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR -->
+  <section id="qr" class="py-12 bg-gray-100 dark:bg-gray-900/50 text-center">
+    <h2 class="text-2xl font-bold mb-4">Scan & Learn More</h2>
+    <img src="sample_qr.png" alt="Sample QR" class="mx-auto w-40 h-40 rounded shadow">
+  </section>
+
+  <!-- Science -->
+  <section id="science" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">The Science Behind SproutScribe</h2>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-green-700 dark:text-green-400">Materials</h3>
+        <p>PLA from corn starch reinforced with bamboo fibers. Ink from vegetable dyes.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-green-700 dark:text-green-400">Testing</h3>
+        <ul class="list-disc pl-6">
+          <li>No toxic residues</li>
+          <li>78% seed germination</li>
+          <li>Writing quality = normal pens</li>
+        </ul>
+        <div id="download" class="mt-6">
+          <a href="sproutscribe_research.pdf" download class="bg-green-600 text-white px-5 py-3 rounded">Download Research Paper</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Survey Data -->
+  <section id="survey-data" class="py-12 bg-gray-100 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Survey Data</h2>
+      <canvas id="bioChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-6">Active Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h4 class="font-semibold">Prototype A</h4>
+        <p>PLA-bamboo blends for strength and decomposition.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h4 class="font-semibold">Seed Capsule UX</h4>
+        <p>Designing biodegradable seed capsules.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h4 class="font-semibold">Ink Formulation</h4>
+        <p>Vegetable dye inks optimized for viscosity and shelf-life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-12 bg-gray-100 dark:bg-gray-900/50">
+    <h3 class="text-3xl font-bold mb-6 text-center">Our Team</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow text-center">
+        <h5 class="font-semibold">Shravan Muralidharan</h5>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow text-center">
+        <h5 class="font-semibold">Rhishabh Shrivastava</h5>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow text-center">
+        <h5 class="font-semibold">Shaurya Jain</h5>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow text-center">
+        <h5 class="font-semibold">Advay Joshi</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Survey -->
+  <section id="live-survey" class="py-12 bg-white dark:bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Take Our Survey</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2yqJNTXap7mb_ZVH6d_M9Bz8pNkYDU8lKY9k6FTzqmfPfpw/viewform?embedded=true"
+              width="640" height="1200" class="w-full max-w-3xl mx-auto rounded-lg shadow"></iframe>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-12 max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">FAQ</h2>
+    <details class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow mb-3" open>
+      <summary>How to open/close the pen?</summary>
+      <p>Twist or click mechanism, both biodegradable.</p>
+    </details>
+    <details class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow mb-3">
+      <summary>How much will it cost?</summary>
+      <p>Similar to mid-range pens, cheaper in bulk.</p>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 dark:bg-black text-white text-center p-6">
+    <p>&copy; <span id="year"></span> SproutScribe · Stories today, a greener tomorrow</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeLabel = document.getElementById('themeLabel');
+    function applyTheme(mode) {
+      if (mode === 'dark') { root.classList.add('dark'); themeLabel.textContent = 'Light'; }
+      else { root.classList.remove('dark'); themeLabel.textContent = 'Dark'; }
+    }
+    const stored = localStorage.getItem('theme');
+    applyTheme(stored || 'light');
+    themeToggle.addEventListener('click', () => {
+      const isDark = root.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      themeLabel.textContent = isDark ? 'Light' : 'Dark';
+    });
+
+    // Chart
+    new Chart(document.getElementById('bioChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Yes','Maybe','No'],
+        datasets: [{ data: [61,26,7], backgroundColor: ['#22c55e','#3b82f6','#f87171'] }]
+      }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
