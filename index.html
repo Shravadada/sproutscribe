@@ -42,7 +42,6 @@
       </nav>
       <button id="menuBtn" class="md:hidden px-3 py-2 border rounded-lg">Menu</button>
     </div>
-    <!-- Mobile -->
     <nav id="mobileNav" class="hidden md:hidden border-t border-slate-200">
       <ul class="px-4 py-3 grid gap-2">
         <li><a class="nav-link" href="#about">About</a></li>
@@ -85,84 +84,14 @@
         <h2 class="text-3xl font-bold mb-6">About SproutScribe</h2>
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div class="prose max-w-none">
-            <p>
-              We’re a student research team from <strong>Raffles Institution (RI)</strong> exploring sustainable
-              writing instruments as a secondary school science project.
-            </p>
-            <p>
-              Our mission: reduce the plastic footprint of disposable pens by designing a pen that writes smoothly,
-              biodegrades safely, and can be planted to grow into a plant at end-of-life.
-            </p>
+            <p>We’re a student research team from <strong>Raffles Institution (RI)</strong>...</p>
+            <p>SproutScribe uses a plant-based body reinforced with natural fibers...</p>
             <p class="text-emerald-700 font-semibold">Tagline: “stories today, a greener tomorrow.”</p>
           </div>
           <div>
-            <img src="WhatsApp%20Image%202025-09-17%20at%2016.00.23.jpeg" alt="Team with mentor" class="rounded-xl shadow-lg w-full object-cover" />
+            <img src="WhatsApp%20Image%202025-09-17%20at%2016.00.23.jpeg" alt="Team with mentor holding prototypes" class="rounded-xl shadow-lg w-full object-cover" />
+            <p class="text-sm text-slate-500 mt-2">Team & mentor with early prototypes.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="page">
-      <div class="py-10">
-        <h2 class="text-3xl font-bold text-center mb-8">Innovative Features</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <article class="card bg-white border rounded-xl p-6">
-            <h3 class="font-semibold text-lg">100% Biodegradable Body</h3>
-            <p>Plant-based blend (PLA + bamboo fiber) designed for durability during use and composting.</p>
-          </article>
-          <article class="card bg-white border rounded-xl p-6">
-            <h3 class="font-semibold text-lg">Seed Capsule in Cap</h3>
-            <p>Non-GMO seeds enclosed for planting after use.</p>
-          </article>
-          <article class="card bg-white border rounded-xl p-6">
-            <h3 class="font-semibold text-lg">Smooth, Safe Ink</h3>
-            <p>Vegetable-based pigments tuned for flow and stability. Writing performance comparable to ballpoints.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCIENCE -->
-    <section id="science" class="page">
-      <div class="py-10">
-        <h2 class="text-3xl font-bold text-center mb-8">The Science</h2>
-        <p>We tested PLA reinforced with bamboo fibers for decomposition, and vegetable-based ink pigments.</p>
-      </div>
-    </section>
-
-    <!-- SURVEY DATA -->
-    <section id="survey-data" class="page">
-      <div class="py-10">
-        <h2 class="text-3xl font-bold text-center mb-8">Survey Data</h2>
-        <p class="text-center">All responses summarized in charts and highlights.</p>
-        <div class="grid gap-6">
-          <canvas id="chartNeed"></canvas>
-          <canvas id="chartAfter"></canvas>
-          <canvas id="chartFrequency"></canvas>
-          <canvas id="chartPollution"></canvas>
-          <canvas id="chartWarming"></canvas>
-          <canvas id="chartMods"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="page">
-      <div class="py-10">
-        <h2 class="text-3xl font-bold text-center mb-8">FAQ</h2>
-        <details class="bg-white border rounded-xl p-5"><summary>How to open/close pen?</summary><p>Prototype uses twist or click without metal springs.</p></details>
-        <details class="bg-white border rounded-xl p-5"><summary>Where’s the cap?</summary><p>The cap doubles as a seed capsule.</p></details>
-        <details class="bg-white border rounded-xl p-5"><summary>How much will it cost?</summary><p>Target: similar to mid-range pens.</p></details>
-      </div>
-    </section>
-
-    <!-- LIVE SURVEY -->
-    <section id="survey" class="page">
-      <div class="py-10">
-        <h2 class="text-3xl font-bold text-center mb-6">Take the Survey</h2>
-        <div class="iframe-wrap">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2yqJNTXap7mb_ZVH6d_M9Bz8pNkYDU8lKY9k6FTzqmfPfpw/viewform?embedded=true" height="1900" loading="lazy">Loading…</iframe>
         </div>
       </div>
     </section>
@@ -192,33 +121,5 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 mt-10">
-    <div class="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-slate-600">
-      &copy; <span id="year"></span> SproutScribe Research Project · stories today, a greener tomorrow
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    menuBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-
-    const pages = Array.from(document.querySelectorAll('.page'));
-    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
-    function showPage(hash){
-      const id = (hash || '#about');
-      pages.forEach(p => p.classList.remove('active'));
-      const el = document.querySelector(id);
-      if(el && el.classList.contains('page')) el.classList.add('active');
-      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
-      mobileNav?.classList.add('hidden');
-    }
-    window.addEventListener('hashchange', ()=>showPage(location.hash));
-    showPage(location.hash || '#about');
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
